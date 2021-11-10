@@ -1,0 +1,15 @@
+#language:pt
+
+Funcionalidade:Preencher os campos da aba Enter Product Data
+
+Cenário:Quero poder inserir dados nos campos ada aba Enter Product Data e ir oara proxima aba
+
+Dado que estou na Aba Enter Product Data
+Quando insiro a Start Date:"01/01/2021"
+E seleciono Insurance Sum [$]:"3.000.000,00"
+E seleciono Merit Rating:"Bonus 4"
+E seleciono Damage Insurance: "Full Coverage"
+E marco a opcao Optional Products
+E seleciono Courtesy Car:"No"
+E clico em Next
+Então vou para proxima aba 

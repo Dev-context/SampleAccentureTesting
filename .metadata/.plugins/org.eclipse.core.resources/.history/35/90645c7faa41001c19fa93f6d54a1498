@@ -1,0 +1,43 @@
+package pages;
+
+import java.lang.*;
+
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver.SystemProperty;
+
+public class EnterVehicledataPage extends BaseClases {
+
+	private By ClickMenuAtomobilie=By.id("nav_automobile");
+	private By abaEnterVehicleData = By.id("entervehicledata");
+	private By make = By.id("make");
+	private By model = By.id("model");
+	private By dateOfManufacture = By.id("dateofmanufacture");
+	private By numberOfSeats = By.id("numberofseats");
+	private By fuelType = By.id("fuel");
+	private By listPrice = By.id("listprice");
+	private By licensePlateNumber = By.id("licenseplatenumber");
+	private By annualmileage = By.id("annualmileage");
+	private By next = By.id("nextenterinsurantdata");
+
+	@Before
+	public void openPage() {
+		setDriver();
+		navegateTo();
+
+	}
+	
+	public void clickAutomobile() {
+		driver.findElement(ClickMenuAtomobilie).click();
+	}
+
+	public String getOptionSelectMake(String opcao) {
+
+		
+
+		return System.out.println(driver.findElement(make));;
+	}
+
+}

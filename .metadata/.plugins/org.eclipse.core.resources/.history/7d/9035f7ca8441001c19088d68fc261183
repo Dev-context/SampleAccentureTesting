@@ -1,0 +1,16 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+public class EnterVehicledataPage {
+	
+	private By abaEnterVehicleData= By.id("entervehicledata");
+	private By make=By.id("make");
+	private By model=By.id("model");
+	private By dateOfManufacture=By.id("dateofmanufacture");
+	private By numberOfSeats=By.id("numberofseats");
+    private By fuelType=By.id(fuel)
+	
+	
+
+}

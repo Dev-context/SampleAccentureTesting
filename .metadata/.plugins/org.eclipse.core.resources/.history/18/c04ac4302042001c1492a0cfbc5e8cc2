@@ -1,0 +1,11 @@
+#language:pt
+Funcionalidade: 
+  Preencher todos os campos da aba Select Price Option e ir para proxima aba
+
+  Cenário: 
+    Quero poder selecionar o preco de acordo com o que foi cadastrado
+
+    Dado que estou na Aba Select Price Option
+    Quando marcar a opcao: "Silver"
+    E clicar em Next
+    Então vou para proxima aba

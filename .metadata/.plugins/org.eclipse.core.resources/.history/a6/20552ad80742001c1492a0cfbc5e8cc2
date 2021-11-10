@@ -1,0 +1,18 @@
+# language: pt
+Funcionalidade: Preencher a aba de Enter Insurant Data e ir para proxima aba
+
+  Cenario: inserir dados nos campos da aba Enter Insurant Data
+    Dado que esteje na aba Enter Insurant Data
+    Quando preencho First Name: "Ana"
+    E preencho Last Name: "Silva"
+    E preencho Date of Birth: "15/07/1994"
+    E seleciono genero: "female"
+    E seleciono Country: "Canada"
+    E preencho Zip Code: "752415"
+    E preencho City: "Vancouver"
+    E seleciono o Occupation: "Farmer"
+    E informo os Hobbies
+    E preencho o Website
+    E insiro a Picture
+    E clico em Next
+    Entao vou para aba Enter Product Data

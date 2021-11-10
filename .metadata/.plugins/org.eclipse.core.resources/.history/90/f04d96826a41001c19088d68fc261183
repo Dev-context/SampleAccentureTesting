@@ -1,0 +1,72 @@
+package Stepsdefinitions;
+import cucumber.api.*;
+
+public class StepsEnterInsurantData {
+	
+
+Dado("que esteje na aba Enter Insurant Data")
+
+Quando("preencho First Name {string}", (String string) -> {
+
+Quando("preencho Last Name {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("preencho Date of Birth {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("seleciono genero {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("seleciono Country {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("preencho Zip Code {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("preencho City {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("seleciono o Occupation {string}", (String string) -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("informo os Hobbies", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("preencho o Website", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("insiro a Picture", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Quando("clico em Next", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+Entao("vou para aba Enter Product Data", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+});
+
+
+}

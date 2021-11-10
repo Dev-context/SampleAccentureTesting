@@ -1,0 +1,73 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+public class EnterInsurantDataPage extends BaseClases{
+
+	private By firstName=By.id("firstname");
+	private By lastName=By.id("lastname");
+	private By dateBirth=By.id("birthdate");
+	private By groupgender=By.xpath("");
+	private By streetAddress=By.id("streetaddress");
+	private By country=By.id("country");
+	private By zipCode=By.id("zipcode");
+	private By city=By.id("city");
+	private By occupation=By.id("occupation");
+	private By groupHobbies=By.xpath("");
+	private By website=By.id("website");
+	private By picture=By.id("picture");
+	
+	
+	public void typeFistname(String name) {
+		driver.findElement(firstName).sendKeys(name);
+	}
+	
+	public void typeLastName(String lastname) {
+		driver.findElement(lastName).sendKeys(lastname);
+	}
+	
+	public void typeDateBirth(String birth) {
+		driver.findElement(dateBirth).sendKeys(birth);
+	}
+	
+	
+	public void selectGender(String gender) {
+		driver.findElements(groupgender).get(1).click();
+	}
+	
+	public void typeStreetAddress(String address) {
+		driver.findElement(streetAddress).sendKeys(address);
+	}
+	
+	public void selectCountry(String country) {
+		driver.findElements(this.country).get(1).click();
+	}
+	
+	public void typeZipCode(String zipCode) {
+		driver.findElement(this.zipCode).sendKeys(zipCode);
+	}
+	
+	
+	public void typeCity(String city) {
+		driver.findElement(this.city).sendKeys(city);
+	}
+	
+	public void selectOccupation(String option) {
+		driver.findElements(occupation).get(1).click();
+	}
+	
+	
+	public void selectHobbies(String hobbie) {
+		driver.findElements(groupHobbies).get(1).click();
+	}
+	
+	public void typeWebSite(String site) {
+		driver.findElement(website).sendKeys(site);
+	}
+	
+	public void typePicture() {
+		
+		driver.findElement(picture).sendKeys();
+	}
+	
+}

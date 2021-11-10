@@ -1,0 +1,14 @@
+#language:pt
+Funcionalidade: Inserir dados na aba Send Quote e enviar
+
+  Cenario: Quero inserir todos os dados na aba Send Quote e poder enviar o fomulario e visualizar uma mensagem de sucesso
+
+    Dado que estou na aba Send Quote
+    Quando insiro o E-mail: "teste@gmail.com"
+    E insiro o Phone:"55227999999"
+    E insiro o Username:"Telnet2020"
+    E insiro o Password:"@t@123T"
+    E insiro o Confirm Password:"@t@123"
+    E insiro o comments:"Esse e um teste automatizado"
+    E clico em Send
+    Entao o sistema exibe uma mensagem de sucesso: "Send e-mail success!"

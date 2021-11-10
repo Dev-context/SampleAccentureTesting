@@ -1,0 +1,77 @@
+package Stepsdefinitions;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
+import pages.EnterVehicledataPage;
+
+public class EnterVehivleDataStep extends EnterVehicledataPage {
+
+	public String userdir;
+
+	@Dado("que estou acensando a aplicacao")
+	public void que_estou_acensando_a_aplicacao() {
+		openPage();
+	}
+
+	@Quando("clico em Automobilie")
+	public void clico_em_automobilie() {
+		clickAutomobile();
+	}
+
+	@E("seleciono na opcao Make:{string}")
+	public void seleciono_na_opcao_make(String string) {
+		getOptionSelectMake(string);
+
+	}
+
+	@E("preencho o campo Engine Performance [kW]:{string}")
+	public void preencho_o_campo_engine_performance_k_w(String string) {
+		typeEnginePerformace(string);
+	}
+
+	@E("informo a Date of Manufacture:{string}")
+	public void informo_a_date_of_manufacture(String string) {
+		
+
+	}
+
+	@Quando("seleciono na opcao Number of Seats {int}")
+	public void seleciono_na_opcao_number_of_seats(Integer int1) {
+	selectNumberSeats(1);
+
+	}
+
+	@E("seleciono na opcao Fuel Type:{string}")
+	public void seleciono_na_opcao_fuel_type(String string) {
+		selectFuelType(string);
+
+	}
+
+	@E("informo a List Price [$]{int}")
+	public void informo_a_list_price_$(Integer int1) {
+		typeListPrice(Integer.toString(int1));
+	}
+
+	@E("infomo a License Plate Number:{string}")
+	public void infomo_a_license_plate_number(String string) {
+		typeLicenseNumber(string);
+	}
+
+	@E("informo a Annual Mileage [mi] {int}")
+	public void informo_a_annual_mileage_mi(Integer int1) {
+		typeAnnualMileage(int1);
+	}
+
+	@E("clico no botao Next")
+	public void clico_no_botao_next() {
+       nextPage();
+	}
+
+	@Entao("vou para aba Enter Insurant Data")
+	public void vou_para_aba_enter_insurant_data() {
+    validateNextpage();
+	}
+
+}

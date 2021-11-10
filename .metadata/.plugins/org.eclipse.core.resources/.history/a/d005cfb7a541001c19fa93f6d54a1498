@@ -1,0 +1,95 @@
+package Stepsdefinitions;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Quando;
+import io.cucumber.java.pt.Entao;
+
+public class StepsEnterInsurantData {
+	
+
+	@Dado("que esteje na aba Enter Insurant Data")
+	public void que_esteje_na_aba_enter_insurant_data() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("preencho First Name {string}")
+	public void preencho_first_name(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("preencho Last Name {string}")
+	public void preencho_last_name(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("preencho Date of Birth {string}")
+	public void preencho_date_of_birth(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("seleciono genero {string}")
+	public void seleciono_genero(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("seleciono Country {string}")
+	public void seleciono_country(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("preencho Zip Code {string}")
+	public void preencho_zip_code(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("preencho City {string}")
+	public void preencho_city(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("seleciono o Occupation {string}")
+	public void seleciono_o_occupation(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("informo os Hobbies")
+	public void informo_os_hobbies() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("preencho o Website")
+	public void preencho_o_website() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("insiro a Picture")
+	public void insiro_a_picture() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@E("clico em Next")
+	public void clico_em_next() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Entao("vou para aba Enter Product Data")
+	public void vou_para_aba_enter_product_data() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

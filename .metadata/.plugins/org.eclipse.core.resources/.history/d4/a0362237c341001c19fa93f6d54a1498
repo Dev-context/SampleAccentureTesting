@@ -1,0 +1,80 @@
+package pages;
+
+import java.lang.*;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver.SystemProperty;
+
+public class EnterVehicledataPage extends BaseClases {
+
+	private By ClickMenuAtomobilie = By.id("nav_automobile");
+	private By abaEnterVehicleData = By.id("entervehicledata");
+	private By make = By.id("make");
+	private By enginePerformace = By.id("engineperformance");
+	private By model = By.id("model");
+	private By dateOfManufacture = By.id("dateofmanufacture");
+	private By numberOfSeats = By.id("numberofseats");
+	private By fuelType = By.id("fuel");
+	private By listPrice = By.id("listprice");
+	private By licensePlateNumber = By.id("licenseplatenumber");
+	private By annualmileage = By.id("annualmileage");
+	private By next = By.id("nextenterinsurantdata");
+
+	@Before
+	public void openPage() {
+		setDriver();
+		navegateTo();
+
+	}
+
+	public void clickAutomobile() {
+		driver.findElement(ClickMenuAtomobilie).click();
+	}
+
+	public void getOptionSelectMake(String opcao) {
+		driver.findElements(make);
+
+	}
+
+	public void typeEnginePerformace(String kw) {
+		driver.findElement(enginePerformace).sendKeys(kw);
+	}
+
+	public void setDateManufacture(String date) {
+		driver.findElement(dateOfManufacture).sendKeys(date);
+
+	}
+	
+	
+	public void selectNumberSeats(int seat) {
+		System.out.println(driver.findElement(numberOfSeats).findElements(By.tagName("option")).get(0).getText());
+	}
+	
+	
+	public void selectFuelType(String fueltype) {
+		driver.findElement(fuelType).findElements(By.tagName("option")).get(0).click();
+	}
+	
+	
+	
+	public void typeListPrice(String price) {
+		driver.findElement(listPrice).sendKeys(price);
+	}
+	
+	public void typeLicenseNumber(String license) {
+		driver.findElement(licensePlateNumber).sendKeys(license);
+	}
+	
+	public void typeAnnualMileage(Integer mileage) {
+		driver.findElement(annualmileage).sendKeys(mileage.toString());
+	}
+	
+	
+
+}

@@ -1,0 +1,9 @@
+#language:pt
+Funcionalidade:
+Inserir dados na aba Send Quote e enviar
+
+Cenario:
+Quero inserir todos os dados na aba Send Quote e poder enviar o fomulario e visualizar uma mensagem de sucesso
+
+Dado que estou na aba Send Quote
+

@@ -1,0 +1,37 @@
+package Stepsdefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Quando;
+import pages.EnterVehicledataPage;
+import io.cucumber.java.pt.Entao;
+
+public class EnterVehivleDataStep extends EnterVehicledataPage {
+	
+	public String userdir;
+	@Dado("que estou acensando a aplicacao")
+	public void que_estou_acensando_a_aplicacao() {
+		openPage();
+	}
+	
+
+
+
+	@Quando("clico em Automobilie")
+	public void clico_em_automobilie() {
+     clickAutomobile();
+	}
+
+	@E("seleciono na opcao Make:Audi")
+	public void seleciono_na_opcao_make_audi() {
+    getOptionSelectMake("Audi");
+	}
+
+	
+
+}

@@ -1,0 +1,79 @@
+package Stepsdefinitions;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
+
+
+public class EnterInsurantDataStep extends {
+	@Dado("que esteje na aba Enter Insurant Data")
+	public void que_esteje_na_aba_enter_insurant_data() {
+		confirmPage();
+	}
+
+	@Quando("preencho First Name: {string}")
+	public void preencho_first_name(String string) {
+	   
+	}
+
+	@E("preencho Last Name: {string}")
+	public void preencho_last_name(String string) {
+	   
+	}
+
+	@E("preencho Date of Birth: {string}")
+	public void preencho_date_of_birth(String string) {
+	   
+	}
+
+	@E("seleciono genero: {string}")
+	public void seleciono_genero(String string) {
+	   
+	}
+
+	@E("seleciono Country: {string}")
+	public void seleciono_country(String string) {
+	    
+	}
+
+	@E("preencho Zip Code: {string}")
+	public void preencho_zip_code(String string) {
+	  
+	}
+
+	@E("preencho City: {string}")
+	public void preencho_city(String string) {
+	    
+	}
+
+	@E("seleciono o Occupation: {string}")
+	public void seleciono_o_occupation(String string) {
+	    
+	}
+
+	@E("informo os Hobbies")
+	public void informo_os_hobbies() {
+	    
+	}
+
+	@E("preencho o Website")
+	public void preencho_o_website() {
+	   
+	}
+
+	@E("insiro a Picture")
+	public void insiro_a_picture() {
+	   
+	}
+
+	@E("clico em Next")
+	public void clico_em_next() {
+	    
+	}
+
+	@Entao("vou para aba Enter Product Data")
+	public void vou_para_aba_enter_product_data() {
+	   
+	}
+}
