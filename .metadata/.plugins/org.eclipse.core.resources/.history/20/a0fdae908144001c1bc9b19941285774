@@ -1,0 +1,12 @@
+package Stepsdefinitions;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.core.plugin.Format.Monochrome;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+@RunWith(Cucumber.class)
+@CucumberOptions(plugin = {"pretty", Monochrome=true},features = {"src/test/resources/features"},glue={"Stepsdefinitions"})
+public class TestRunner {
+
+}

@@ -1,9 +1,0 @@
-#language:pt
-Funcionalidade:realizar o acesso ao endereco web para poder cadastrar os dados com sucesso
-
-
-Esquema do Cenário:acessar pagina
-Dado que o usuario acesse a <pagina>
-
-
-
